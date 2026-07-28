@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Hatem | Front-End Developer</title>
+    <script
+      src="https://kit.fontawesome.com/45d3d0422b.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta
+      name="description"
+      content="Mohamed Hatem — freelance front-end developer based in Alexandria, Egypt. Building clean, responsive interfaces with HTML, CSS, Tailwind & JavaScript."
+    />
+    <meta name="author" content="Mohamed Hatem" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://mo7amedxv.github.io/portfolio/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohamed Hatem | Front-End Developer" />
+    <meta
+      property="og:description"
+      content="Freelance front-end developer based in Alexandria, Egypt. Building clean, responsive interfaces with HTML, CSS, Tailwind & JavaScript."
+    />
+    <meta property="og:url" content="https://mo7amedxv.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://mo7amedxv.github.io/portfolio/og-image.jpg"
+    />
+    <meta property="og:site_name" content="Mohamed Hatem — Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mohamed Hatem | Front-End Developer" />
+    <meta
+      name="twitter:description"
+      content="Freelance front-end developer based in Alexandria, Egypt. Building clean, responsive interfaces with HTML, CSS, Tailwind & JavaScript."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mo7amedxv.github.io/portfolio/og-image.jpg"
+    />
+
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%230a0a0a%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2268%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2256%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        --font-display: "Space Grotesk", sans-serif;
+        --font-body: "Inter", sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
+
+        --space-1: 0.5rem;
+        --space-2: 1rem;
+        --space-3: 1.5rem;
+        --space-4: 2rem;
+        --space-6: 3rem;
+        --space-8: 4rem;
+        --space-12: 6rem;
+        --space-16: 8rem;
+
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 16px;
+
+        --maxw: 1100px;
+        --ghost: rgb(255 255 255 / 5%);
+        --bg: #0a0a0a;
+        --bg-elevated: #141414;
+        --bg-elevated-2: #1c1c1c;
+        --border: #2a2a2a;
+        --border-strong: #3a3a3a;
+        --text-primary: #f2f2f0;
+        --text-secondary: #a3a3a0;
+        --text-tertiary: #6b6b68;
+        --accent: #ffffff;
+        --accent-contrast: #0a0a0a;
+        --shadow: rgba(0, 0, 0, 0.45);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      html[data-theme="light"] {
+        --ghost: rgb(10 10 10 / 5%);
+        --bg: #fafaf9;
+        --bg-elevated: #ffffff;
+        --bg-elevated-2: #f0f0ee;
+        --border: #e3e3e0;
+        --border-strong: #cfcfcb;
+        --text-primary: #121210;
+        --text-secondary: #5c5c58;
+        --text-tertiary: #8a8a86;
+        --accent: #121210;
+        --accent-contrast: #ffffff;
+        --shadow: rgba(0, 0, 0, 0.08);
+      }
+      .container {
+        opacity: 0;
+        transform: translateY(100px);
+        transition:
+          transform 0.8s ease,
+          opacity 0.8s ease;
+      }
+      .container.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .container.hide-up {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      main section {
+        scroll-margin-top: 80px;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .cursor {
+        animation: blink 1s step-end infinite;
+      }
+      .topbar {
+        background: color-mix(in srgb, var(--bg) 82%, transparent);
+      }
+      .eyebrow::before {
+        content: "$";
+      }
+      body {
+        font-family: var(--font-body);
+        color: var(--text-primary);
+      }
+      html[data-theme="light"] .icon-moon {
+        display: none;
+      }
+      html[data-theme="light"] .icon-sun {
+        display: block;
+      }
+      ::selection {
+        background: var(--text-primary);
+        color: var(--bg);
+      }
+
+      ::-moz-selection {
+        background: var(--text-primary);
+        color: var(--bg);
+      }
+      @media screen and (max-width: 375px) {
+        .cta {
+          width: 100%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohamed Hatem",
+        "jobTitle": "Front-End Developer",
+        "url": "https://mo7amedxv.github.io/portfolio/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Alexandria",
+          "addressCountry": "EG"
+        },
+        "sameAs": [
+          "https://github.com/mo7amedxv",
+          "https://www.linkedin.com/in/mohamed-hatem-68ba49414/"
+        ]
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            colors: {
+              surface: {
+                DEFAULT: "var(--bg)",
+                raised: "var(--bg-elevated)",
+                raised2: "var(--bg-elevated-2)",
+              },
+              ink: {
+                DEFAULT: "var(--text-primary)",
+                soft: "var(--text-secondary)",
+                faint: "var(--text-tertiary)",
+                ghost: "var(--ghost)",
+              },
+              line: {
+                DEFAULT: "var(--border)",
+                strong: "var(--border-strong)",
+              },
+              accent: {
+                DEFAULT: "var(--accent)",
+                contrast: "var(--accent-contrast)",
+              },
+            },
+            maxWidth: {
+              container: "1100px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-surface">
+    <header
+      class="topbar h-[60px] sticky top-0 z-50 border-b border-line backdrop-blur-md"
+    >
+      <div
+        class="topbar-inner h-full flex items-center px-8 justify-between max-w-container mx-auto"
+      >
+        <div class="logo flex items-center">
+          <img src="" alt="" />
+          <a href="/" class="logo-text text-ink font-display">Mohamed</a>
+        </div>
+        <nav
+          class="nav-links absolute inset-x-0 top-[60px] z-40 flex h-0 flex-col items-start divide-y divide-line overflow-hidden border-b border-line bg-surface-raised p-6 text-[0.92rem] opacity-0 invisible transition-all duration-300 [&.show]:visible [&.show]:opacity-100 [&.show]:h-[323px] md:static md:h-auto md:flex-row md:items-center md:gap-8 md:divide-y-0 md:visible md:opacity-100 md:overflow-visible md:border-0 md:bg-transparent md:p-0"
+          id="navLinks"
+        >
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#home"
+            >Home</a
+          >
+
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#about"
+            >About</a
+          >
+
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#skills"
+            >Skills</a
+          >
+
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#projects"
+            >Projects</a
+          >
+
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="nav-right flex items-center gap-3">
+          <button
+            class="theme-toggle flex h-[38px] w-[38px] items-center justify-center rounded-full border border-line bg-surface-raised text-ink transition-colors duration-200 hover:border-line-strong"
+            id="themeToggle"
+            aria-label="Toggle dark and light mode"
+          >
+            <svg
+              class="icon-moon h-[18px] w-[18px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun hidden h-[18px] w-[18px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+          </button>
+          <button
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            class="group relative flex h-[38px] w-[38px] items-center justify-center rounded-md border border-line bg-surface-raised md:hidden"
+          >
+            <span
+              class="absolute h-[2px] w-5 rounded-full bg-ink transition-all duration-300 -translate-y-[6px] group-[.show]:translate-y-0 group-[.show]:rotate-45"
+            ></span>
+            <span
+              class="absolute h-[2px] w-5 rounded-full bg-ink transition-all duration-300 group-[.show]:opacity-0"
+            ></span>
+            <span
+              class="absolute h-[2px] w-5 rounded-full bg-ink transition-all duration-300 translate-y-[6px] group-[.show]:translate-y-0 group-[.show]:-rotate-45"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        id="home"
+        class="relative flex min-h-[calc(100vh-60px)] items-center overflow-hidden py-16 md:py-24"
+      >
+        <span
+          aria-hidden="true"
+          class="pointer-events-none absolute -right-10 top-1/2 hidden -translate-y-1/2 select-none font-display text-[clamp(14rem,22vw,26rem)] font-bold leading-none text-ink opacity-[0.06] md:block"
+          >MH</span
+        >
+        <div
+          class="hero-inner container relative mx-auto w-full max-w-container py-0 px-8"
+        >
+          <div
+            class="mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-surface-raised px-4 py-1.5 text-sm text-ink-soft"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-ink opacity-40"
+              ></span>
+              <span
+                class="relative inline-flex h-2 w-2 rounded-full bg-ink-soft"
+              ></span>
+            </span>
+            Available for freelance work
+          </div>
+          <h1
+            class="mb-3 font-display text-[clamp(2.6rem,7vw,4.75rem)] font-bold leading-[1.05] tracking-tight"
+          >
+            Mohamed Hatem
+          </h1>
+          <p
+            class="mb-8 font-display text-[clamp(0.9rem,2.5vw,1.5rem)] font-medium text-ink-soft"
+          >
+            Front-End Developer • Alexandria, Egypt
+          </p>
+          <p
+            class="mb-10 max-w-[600px] text-[1.05rem] leading-relaxed text-ink-soft"
+          >
+            Front-end developer passionate about building clean, responsive, and
+            accessible web experiences with HTML, CSS, Tailwind CSS, and
+            JavaScript.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              class="inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-contrast transition-all duration-200 hover:-translate-y-1 hover:opacity-90 active:scale-95 cta-primary cta"
+            >
+              View Projects
+            </a>
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 rounded-md border border-line-strong px-6 py-3 text-sm font-semibold text-ink transition-all duration-200 hover:-translate-y-1 hover:bg-surface-raised2 active:scale-95 cta cta-secondary"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about bg-surface-raised py-16 md:py-24">
+        <div class="about-inner container px-8 max-w-container mx-auto w-full">
+          <div
+            class="section-head relative mb-10 md:mb-16 isolate max-w-[640px]"
+          >
+            <span
+              class="ghost-num text-[clamp(4.5rem,9vw,7.5rem)] font-bold text-ink-ghost pointer-events-none select-none right-[-0.4rem] top-[-1.6rem] absolute z-[-1] font-display leading-none"
+              >01</span
+            >
+            <h2
+              class="text-[clamp(2rem,4vw,2.5rem)] tracking-[-0.02em] font-display font-semibold"
+            >
+              About
+            </h2>
+          </div>
+          <div
+            class="about-grid grid grid-cols-1 md:grid-cols-[1fr_260px] gap-[2rem]"
+          >
+            <div class="about-text">
+              <p class="text-ink-soft mb-6 max-w-[60ch]">
+                I'm Mohamed, a freelance frontend developer working out of
+                Alexandria, Egypt. I turn designs into clean, responsive
+                interfaces using HTML and CSS, and I'm steadily building up my
+                JavaScript so I can take on more interactive work.
+              </p>
+              <p class="text-ink-soft mb-6 max-w-[60ch]">
+                Every project gets tracked in Git and pushed to GitHub — I like
+                keeping a clear history of how a build evolves, not just the
+                finished result. I'm currently available for freelance work, big
+                or small.
+              </p>
+              <div class="about-tags flex flex-wrap gap-2 mb-6">
+                <span
+                  class="font-body font-medium text-[0.8rem] py-[0.4rem] px-[0.8rem] rounded-full border border-[var(--border)] text-ink-soft"
+                  >Based in — Alexandria, Egypt</span
+                >
+                <span
+                  class="font-body font-medium text-[0.8rem] py-[0.4rem] px-[0.8rem] rounded-full border border-[var(--border)] text-ink-soft"
+                  >Open to — Freelance work</span
+                >
+                <span
+                  class="font-body font-medium text-[0.8rem] py-[0.4rem] px-[0.8rem] rounded-full border border-[var(--border)] text-ink-soft"
+                  >Learning — JavaScript</span
+                >
+              </div>
+            </div>
+            <div
+              class="tile aspect-square rounded-[var(--radius-lg)] bg-[var(--bg-elevated-2)] border border-[var(--border)] flex items-center justify-center text-[3rem] overflow-hidden"
+            >
+              <img
+                src="profile.avif"
+                class="w-full h-full object-cover grayscale contrast-[1.05] brightness-[1.05]"
+                alt="Portrait photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills bg-surface py-16 md:py-24">
+        <div class="max-w-container container mx-auto w-full px-8">
+          <div class="section-head relative mb-16 isolate max-w-[640px]">
+            <span
+              class="absolute right-[-0.4rem] top-[-1.6rem] -z-10 pointer-events-none select-none font-display font-bold leading-none text-[clamp(4.5rem,9vw,7.5rem)] text-ink-ghost"
+            >
+              02
+            </span>
+
+            <h2
+              class="font-display font-semibold tracking-[-0.02em] text-[clamp(2rem,4vw,2.5rem)] text-ink"
+            >
+              Skills
+            </h2>
+          </div>
+
+          <ol
+            class="relative space-y-2 md:before:absolute md:before:left-8 md:before:top-12 md:before:bottom-12 md:before:w-px md:before:bg-line md:before:z-[-1] isolate"
+          >
+            <li
+              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+            >
+              <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+              >
+                <i class="fa-brands fa-html5 text-lg"></i>
+              </span>
+              <div class="flex-1">
+                <h3 class="font-display text-xl font-semibold text-ink">
+                  HTML
+                </h3>
+                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                  Semantic HTML focused on accessibility, SEO, and maintainable
+                  structure.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+            >
+              <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+              >
+                <i class="fa-brands fa-css3-alt text-lg"></i>
+              </span>
+              <div class="flex-1">
+                <h3 class="font-display text-xl font-semibold text-ink">CSS</h3>
+                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                  Responsive layouts using Flexbox, Grid, animations, and modern
+                  CSS techniques.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+            >
+              <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+              >
+                <i class="fa-solid fa-wind text-lg"></i>
+              </span>
+              <div class="flex-1">
+                <h3 class="font-display text-xl font-semibold text-ink">
+                  Tailwind CSS
+                </h3>
+                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                  Utility-first framework for building fast, responsive, and
+                  consistent interfaces.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+            >
+              <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+              >
+                <i class="fa-brands fa-git-alt text-lg"></i>
+              </span>
+              <div class="flex-1">
+                <h3 class="font-display text-xl font-semibold text-ink">Git</h3>
+                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                  Version control with organized commits and efficient
+                  development workflows.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+            >
+              <span
+                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+              >
+                <i class="fa-brands fa-github text-lg"></i>
+              </span>
+              <div class="flex-1">
+                <h3 class="font-display text-xl font-semibold text-ink">
+                  GitHub
+                </h3>
+                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                  Hosting repositories, collaboration, and managing code with
+                  GitHub.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
