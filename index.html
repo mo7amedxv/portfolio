@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Hatem | Front-End Developer</title>
-    <script
-      src="https://kit.fontawesome.com/45d3d0422b.js"
-      crossorigin="anonymous"
-    ></script>
     <meta
       name="description"
       content="Mohamed Hatem — freelance front-end developer based in Alexandria, Egypt. Building clean, responsive interfaces with HTML, CSS, Tailwind & JavaScript."
@@ -49,114 +45,6 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%230a0a0a%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2268%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2256%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%3C/svg%3E"
     />
-    <style>
-      :root {
-        --font-display: "Space Grotesk", sans-serif;
-        --font-body: "Inter", sans-serif;
-        --font-mono: "JetBrains Mono", monospace;
-
-        --space-1: 0.5rem;
-        --space-2: 1rem;
-        --space-3: 1.5rem;
-        --space-4: 2rem;
-        --space-6: 3rem;
-        --space-8: 4rem;
-        --space-12: 6rem;
-        --space-16: 8rem;
-
-        --radius-sm: 6px;
-        --radius-md: 10px;
-        --radius-lg: 16px;
-
-        --maxw: 1100px;
-        --ghost: rgb(255 255 255 / 5%);
-        --bg: #0a0a0a;
-        --bg-elevated: #141414;
-        --bg-elevated-2: #1c1c1c;
-        --border: #2a2a2a;
-        --border-strong: #3a3a3a;
-        --text-primary: #f2f2f0;
-        --text-secondary: #a3a3a0;
-        --text-tertiary: #6b6b68;
-        --accent: #ffffff;
-        --accent-contrast: #0a0a0a;
-        --shadow: rgba(0, 0, 0, 0.45);
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      html[data-theme="light"] {
-        --ghost: rgb(10 10 10 / 5%);
-        --bg: #fafaf9;
-        --bg-elevated: #ffffff;
-        --bg-elevated-2: #f0f0ee;
-        --border: #e3e3e0;
-        --border-strong: #cfcfcb;
-        --text-primary: #121210;
-        --text-secondary: #5c5c58;
-        --text-tertiary: #8a8a86;
-        --accent: #121210;
-        --accent-contrast: #ffffff;
-        --shadow: rgba(0, 0, 0, 0.08);
-      }
-      .container {
-        opacity: 0;
-        transform: translateY(100px);
-        transition:
-          transform 0.8s ease,
-          opacity 0.8s ease;
-      }
-      .container.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .container.hide-up {
-        opacity: 0;
-        transform: translateY(-100px);
-      }
-      main section {
-        scroll-margin-top: 80px;
-      }
-      @keyframes blink {
-        50% {
-          opacity: 0;
-        }
-      }
-      .cursor {
-        animation: blink 1s step-end infinite;
-      }
-      .topbar {
-        background: color-mix(in srgb, var(--bg) 82%, transparent);
-      }
-      .eyebrow::before {
-        content: "$";
-      }
-      body {
-        font-family: var(--font-body);
-        color: var(--text-primary);
-      }
-      html[data-theme="light"] .icon-moon {
-        display: none;
-      }
-      html[data-theme="light"] .icon-sun {
-        display: block;
-      }
-      ::selection {
-        background: var(--text-primary);
-        color: var(--bg);
-      }
-
-      ::-moz-selection {
-        background: var(--text-primary);
-        color: var(--bg);
-      }
-      @media screen and (max-width: 375px) {
-        .cta {
-          width: 100%;
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="style.css" />
 
     <script type="application/ld+json">
       {
@@ -176,53 +64,9 @@
         ]
       }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              display: ["Space Grotesk", "sans-serif"],
-              body: ["Inter", "sans-serif"],
-              mono: ["JetBrains Mono", "monospace"],
-            },
-            colors: {
-              surface: {
-                DEFAULT: "var(--bg)",
-                raised: "var(--bg-elevated)",
-                raised2: "var(--bg-elevated-2)",
-              },
-              ink: {
-                DEFAULT: "var(--text-primary)",
-                soft: "var(--text-secondary)",
-                faint: "var(--text-tertiary)",
-                ghost: "var(--ghost)",
-              },
-              line: {
-                DEFAULT: "var(--border)",
-                strong: "var(--border-strong)",
-              },
-              accent: {
-                DEFAULT: "var(--accent)",
-                contrast: "var(--accent-contrast)",
-              },
-            },
-            maxWidth: {
-              container: "1100px",
-            },
-          },
-        },
-      };
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <body class="bg-surface">
+  <body class="bg-surface font-body text-ink">
     <header
       class="topbar h-[60px] sticky top-0 z-50 border-b border-line backdrop-blur-md"
     >
@@ -365,7 +209,7 @@
             </a>
             <a
               href="#contact"
-              class="inline-flex items-center gap-2 rounded-md border border-line-strong px-6 py-3 text-sm font-semibold text-ink transition-all duration-200 hover:-translate-y-1 hover:bg-surface-raised2 active:scale-95 cta cta-secondary"
+              class="inline-flex items-center gap-2 rounded-md border border-line-strong px-6 py-3 text-sm font-semibold text-ink transition-all duration-200 hover:-translate-y-1 hover:bg-surface-raised-secondary active:scale-95 cta cta-secondary"
             >
               Get in Touch
             </a>
@@ -423,8 +267,9 @@
             >
               <img
                 src="profile.avif"
-                class="w-full h-full object-cover grayscale contrast-[1.05] brightness-[1.05]"
-                alt="Portrait photo"
+                class="w-full h-full object-cover"
+                alt="Professional black and white portrait of a developer"
+                loading="lazy"
               />
             </div>
           </div>
@@ -435,114 +280,134 @@
           <div class="section-head relative mb-16 isolate max-w-[640px]">
             <span
               class="absolute right-[-0.4rem] top-[-1.6rem] -z-10 pointer-events-none select-none font-display font-bold leading-none text-[clamp(4.5rem,9vw,7.5rem)] text-ink-ghost"
+              >02</span
             >
-              02
-            </span>
-
             <h2
               class="font-display font-semibold tracking-[-0.02em] text-[clamp(2rem,4vw,2.5rem)] text-ink"
             >
               Skills
             </h2>
           </div>
-
-          <ol
-            class="relative space-y-2 md:before:absolute md:before:left-8 md:before:top-12 md:before:bottom-12 md:before:w-px md:before:bg-line md:before:z-[-1] isolate"
+          <ul
+            class="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-3 md:grid-cols-3 md:gap-4"
           >
             <li
-              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
             >
               <span
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
               >
-                <i class="fa-brands fa-html5 text-lg"></i>
-              </span>
-              <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-ink">
-                  HTML
-                </h3>
-                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
-                  Semantic HTML focused on accessibility, SEO, and maintainable
-                  structure.
-                </p>
-              </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-7 h-7"
+                >
+                  <path
+                    d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"
+                    fill="currentColor"
+                  /></svg
+              ></span>
+              <h3 class="mt-4 font-display text-lg font-semibold text-ink">
+                HTML
+              </h3>
+              <p class="mt-2 font-body text-sm text-ink-soft">
+                Semantic HTML focused on accessibility, SEO, and maintainable
+                structure.
+              </p>
             </li>
-
             <li
-              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
             >
               <span
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
-              >
-                <i class="fa-brands fa-css3-alt text-lg"></i>
-              </span>
-              <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-ink">CSS</h3>
-                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
-                  Responsive layouts using Flexbox, Grid, animations, and modern
-                  CSS techniques.
-                </p>
-              </div>
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-7 h-7"
+                >
+                  <path
+                    d="M128 96L162.9 491.8L320 544L477.1 491.8L512 96L128 96zM441.1 176L436.3 223.3L321 272.6L320.7 272.7L432.2 272.7L419.4 419.3L321.2 448L222.4 418.8L216 344.9L264.9 344.9L268.1 383.2L320.7 396.5L375.4 381.1L379.1 319.5L212.8 319L212.8 318.9L212.6 319L209 272.7L321.1 226L327.6 223.3L204.7 223.3L198.9 176L441.1 176z"
+                    fill="currentColor"
+                  /></svg
+              ></span>
+              <h3 class="mt-4 font-display text-lg font-semibold text-ink">
+                CSS
+              </h3>
+              <p class="mt-2 font-body text-sm text-ink-soft">
+                Responsive layouts using Flexbox, Grid, animations, and modern
+                CSS techniques.
+              </p>
             </li>
-
             <li
-              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
             >
               <span
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
-              >
-                <i class="fa-solid fa-wind text-lg"></i>
-              </span>
-              <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-ink">
-                  Tailwind CSS
-                </h3>
-                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
-                  Utility-first framework for building fast, responsive, and
-                  consistent interfaces.
-                </p>
-              </div>
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M320 128C234.7 128 181.3 170.7 160 256C192 213.3 229.3 197.3 272 208C296.3 214.1 313.7 231.8 333 251.3C364.4 283.1 400.7 320 480 320C565.3 320 618.7 277.3 640 192C608 234.7 570.7 250.7 528 240C503.7 233.9 486.3 216.2 467 196.7C435.6 164.9 399.3 128 320 128zM160 320C74.7 320 21.3 362.7 0 448C32 405.3 69.3 389.3 112 400C136.3 406.1 153.7 423.8 173 443.3C204.4 475.1 240.7 512 320 512C405.3 512 458.7 469.3 480 384C448 426.7 410.7 442.7 368 432C343.7 425.9 326.3 408.2 307 388.7C275.6 356.9 239.3 320 160 320z"
+                    fill="currentColor"
+                  /></svg
+              ></span>
+              <h3 class="mt-4 font-display text-lg font-semibold text-ink">
+                Tailwind CSS
+              </h3>
+              <p class="mt-2 font-body text-sm text-ink-soft">
+                Utility-first framework for building fast, responsive, and
+                consistent interfaces.
+              </p>
             </li>
-
             <li
-              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
             >
               <span
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
-              >
-                <i class="fa-brands fa-git-alt text-lg"></i>
-              </span>
-              <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-ink">Git</h3>
-                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
-                  Version control with organized commits and efficient
-                  development workflows.
-                </p>
-              </div>
+                class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-7 h-7"
+                >
+                  <path
+                    d="M535.6 300.1L340 104.5C334.6 99 327.2 96 319.6 96C312 96 304.6 99 299.2 104.4L258.5 145L310 196.5C337.1 187.4 362.7 213.3 353.4 240.2L403.1 289.9C437.3 278.1 464.3 320.9 438.6 346.6C412.1 373.1 368.4 343.7 382.6 309.3L336.3 263L336.3 384.9C361.6 397.4 358.6 426.7 345.4 439.9C339 446.3 330.2 450 321.1 450C312 450 303.3 446.4 296.8 439.9C279.2 422.3 285.7 393 308 383.9L308 260.9C287.2 252.4 283.4 230.2 289.4 215.9L238.6 165L104.5 299.1C99 304.6 96 311.9 96 319.5C96 327.1 99 334.5 104.5 339.9L300.1 535.6C305.5 541 312.8 544 320.5 544C328.2 544 335.5 541 340.9 535.6L535.6 340.9C541 335.5 544 328.1 544 320.5C544 312.9 541 305.5 535.6 300.1z"
+                    fill="currentColor"
+                  /></svg
+              ></span>
+              <h3 class="mt-4 font-display text-lg font-semibold text-ink">
+                Git
+              </h3>
+              <p class="mt-2 font-body text-sm text-ink-soft">
+                Version control with organized commits and efficient development
+                workflows.
+              </p>
             </li>
-
             <li
-              class="group flex flex-col gap-4 rounded-[var(--radius-lg)] p-2 transition sm:flex-row sm:gap-6"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent md:col-span-2 sm:flex sm:items-center sm:gap-5"
             >
               <span
-                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-line bg-surface-raised text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
-              >
-                <i class="fa-brands fa-github text-lg"></i>
-              </span>
-              <div class="flex-1">
-                <h3 class="font-display text-xl font-semibold text-ink">
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-7 h-7">
+                  <path
+                    d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"
+                  fill="currentColor"/></svg
+              ></span>
+              <div class="mt-4 sm:mt-0">
+                <h3 class="font-display text-lg font-semibold text-ink">
                   GitHub
                 </h3>
-                <p class="mt-2 max-w-[60ch] font-body text-ink-soft">
+                <p class="mt-2 font-body text-sm text-ink-soft">
                   Hosting repositories, collaboration, and managing code with
                   GitHub.
                 </p>
               </div>
             </li>
-          </ol>
+          </ul>
         </div>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
