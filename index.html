@@ -260,11 +260,19 @@
             </p>
           </div>
 
-          <div class="projects-grid grid">
+          <div class="projects-grid grid gap-3 md:gap-0">
             <div
-              class="project flex flex-wrap items-center justify-between gap-4 border-t border-line p-4"
+              class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/elkaeron.avif"
             >
+              <div class="image-container md:hidden">
+                <img
+                  src="images/elkaeron.avif"
+                  alt="Preview of the elKaeron website"
+                  class="block md:hidden w-full rounded-xl border border-line object-cover"
+                  loading="lazy"
+                />
+              </div>
               <div class="info-container">
                 <h3
                   class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
@@ -281,12 +289,12 @@
 
               <div class="actions flex items-center gap-5">
                 <a
-                  class="group flex rounded-full bg-surface-raised-secondary px-4 py-3 text-sm"
+                  class="group flex rounded-full bg-accent px-4 py-3 text-sm transition-transform duration-150 active:scale-95 text-accent-contrast"
                   href="https://mo7amedxv.github.io/elkaeron/"
                   target="_blank"
                 >
                   <span
-                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-ink after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                    class="relative text-accent-contrast after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
                   >
                     View Live Project
                   </span>
@@ -306,10 +314,18 @@
                 </a>
               </div>
             </div>
-                        <div
-              class="project flex flex-wrap items-center justify-between gap-4 border-t border-line p-4"
+            <div
+              class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/jadwaly.avif"
             >
+              <div class="image-container md:hidden">
+                <img
+                  src="images/jadwaly.avif"
+                  alt="Preview of the elKaeron website"
+                  class="block md:hidden w-full rounded-xl border border-line object-cover"
+                  loading="lazy"
+                />
+              </div>
               <div class="info-container">
                 <h3
                   class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
@@ -326,16 +342,15 @@
 
               <div class="actions flex items-center gap-5">
                 <a
-                  class="group flex rounded-full bg-surface-raised-secondary px-4 py-3 text-sm"
+                  class="group flex rounded-full transition-transform duration-150 active:scale-95 bg-accent px-4 py-3 text-sm text-accent-contrast"
                   href="https://mo7amedxv.github.io/jadwaly-shaima/"
                   target="_blank"
                 >
                   <span
-                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-ink after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                    class="relative text-accent-contrast after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
                   >
                     View Live Project
                   </span>
-
                   <svg
                     class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
                     viewBox="0 0 24 24"
@@ -363,7 +378,6 @@
             alt="Preview of the elKaeron website"
             draggable="false"
           />
-
         </div>
       </section>
       <section id="about" class="about py-16 md:py-24">
