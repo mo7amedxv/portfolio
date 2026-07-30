@@ -64,6 +64,23 @@
         ]
       }
     </script>
+    <style>
+      #project-preview {
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.3s ease,
+          visibility 0s linear 0.3s;
+      }
+
+      #project-preview.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transition:
+          opacity 0.3s ease,
+          visibility 0s linear 0s;
+      }
+    </style>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body class="bg-surface font-body text-ink">
@@ -89,20 +106,18 @@
 
           <a
             class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
             href="#about"
             >About</a
           >
-
           <a
             class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
             href="#skills"
             >Skills</a
-          >
-
-          <a
-            class="block w-full relative py-4 md:py-2 text-ink-soft transition-colors duration-300 hover:text-ink after:content-none md:after:content-[''] md:after:absolute md:after:start-0 md:after:bottom-[3px] md:after:h-[1px] md:after:w-0 md:after:rounded-full md:after:bg-accent md:after:transition-all md:after:duration-300 md:hover:after:w-full"
-            href="#projects"
-            >Projects</a
           >
 
           <a
@@ -216,14 +231,149 @@
           </div>
         </div>
       </section>
-      <section id="about" class="about bg-surface-raised py-16 md:py-24">
+      <section
+        id="projects"
+        class="projects relative overflow-hidden bg-surface-raised py-16 md:py-24"
+      >
+        <div
+          class="projects-inner container mx-auto w-full max-w-container px-8"
+        >
+          <div
+            class="section-head relative isolate mb-10 max-w-[640px] md:mb-16"
+          >
+            <span
+              class="ghost-num pointer-events-none absolute right-[-0.4rem] top-[-1.6rem] z-[-1] select-none font-display text-[clamp(4.5rem,9vw,7.5rem)] font-bold leading-none text-ink-ghost"
+            >
+              01
+            </span>
+
+            <h2
+              class="font-display text-[clamp(2rem,4vw,2.5rem)] font-semibold tracking-[-0.02em]"
+            >
+              Projects
+            </h2>
+
+            <p
+              class="font-body text-[clamp(.9rem,1rem,1.1rem)] tracking-[-0.02em] text-ink-soft text-balance"
+            >
+              A few things I've designed, built, and shipped.
+            </p>
+          </div>
+
+          <div class="projects-grid grid">
+            <div
+              class="project flex flex-wrap items-center justify-between gap-4 border-t border-line p-4"
+              data-preview-image="images/elkaeron.avif"
+            >
+              <div class="info-container">
+                <h3
+                  class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
+                >
+                  PcBenchPro — elKaeron
+                </h3>
+
+                <p
+                  class="font-mono text-[clamp(.9rem,1rem,1.2rem)] leading-relaxed text-ink-soft"
+                >
+                  HTML · CSS · JavaScript
+                </p>
+              </div>
+
+              <div class="actions flex items-center gap-5">
+                <a
+                  class="group flex rounded-full bg-surface-raised-secondary px-4 py-3 text-sm"
+                  href="https://mo7amedxv.github.io/elkaeron/"
+                  target="_blank"
+                >
+                  <span
+                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-ink after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                  >
+                    View Live Project
+                  </span>
+
+                  <svg
+                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+                        <div
+              class="project flex flex-wrap items-center justify-between gap-4 border-t border-line p-4"
+              data-preview-image="images/jadwaly.avif"
+            >
+              <div class="info-container">
+                <h3
+                  class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
+                >
+                  Jadwaly — Nursery Management
+                </h3>
+
+                <p
+                  class="font-mono text-[clamp(.9rem,1rem,1.2rem)] leading-relaxed text-ink-soft"
+                >
+                  HTML · CSS · JavaScript
+                </p>
+              </div>
+
+              <div class="actions flex items-center gap-5">
+                <a
+                  class="group flex rounded-full bg-surface-raised-secondary px-4 py-3 text-sm"
+                  href="https://mo7amedxv.github.io/jadwaly-shaima/"
+                  target="_blank"
+                >
+                  <span
+                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-ink after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                  >
+                    View Live Project
+                  </span>
+
+                  <svg
+                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="project-preview"
+          class="fixed top-0 left-0 z-50 w-[350px] overflow-hidden rounded-2xl border border-line bg-surface-raised shadow-2xl opacity-0 invisible pointer-events-none transition-opacity duration-300"
+        >
+          <img
+            class="block h-auto max-w-full select-none object-cover"
+            src="images/elkaeron.avif"
+            alt="Preview of the elKaeron website"
+            draggable="false"
+          />
+
+        </div>
+      </section>
+      <section id="about" class="about py-16 md:py-24">
         <div class="about-inner container px-8 max-w-container mx-auto w-full">
           <div
             class="section-head relative mb-10 md:mb-16 isolate max-w-[640px]"
           >
             <span
               class="ghost-num text-[clamp(4.5rem,9vw,7.5rem)] font-bold text-ink-ghost pointer-events-none select-none right-[-0.4rem] top-[-1.6rem] absolute z-[-1] font-display leading-none"
-              >01</span
+              >02</span
             >
             <h2
               class="text-[clamp(2rem,4vw,2.5rem)] tracking-[-0.02em] font-display font-semibold"
@@ -266,21 +416,23 @@
               class="tile aspect-square rounded-[var(--radius-lg)] bg-[var(--bg-elevated-2)] border border-[var(--border)] flex items-center justify-center text-[3rem] overflow-hidden"
             >
               <img
-                src="profile.avif"
+                src="images/profile.avif"
                 class="w-full h-full object-cover"
                 alt="Professional black and white portrait of a developer"
+                width="700"
+                height="700"
                 loading="lazy"
               />
             </div>
           </div>
         </div>
       </section>
-      <section id="skills" class="skills bg-surface py-16 md:py-24">
+      <section id="skills" class="skills bg-surface-raised py-16 md:py-24">
         <div class="max-w-container container mx-auto w-full px-8">
           <div class="section-head relative mb-16 isolate max-w-[640px]">
             <span
               class="absolute right-[-0.4rem] top-[-1.6rem] -z-10 pointer-events-none select-none font-display font-bold leading-none text-[clamp(4.5rem,9vw,7.5rem)] text-ink-ghost"
-              >02</span
+              >03</span
             >
             <h2
               class="font-display font-semibold tracking-[-0.02em] text-[clamp(2rem,4vw,2.5rem)] text-ink"
@@ -292,7 +444,7 @@
             class="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-3 md:grid-cols-3 md:gap-4"
           >
             <li
-              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised-secondary p-5 transition duration-300 hover:border-accent"
             >
               <span
                 class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
@@ -316,7 +468,7 @@
               </p>
             </li>
             <li
-              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised-secondary p-5 transition duration-300 hover:border-accent"
             >
               <span
                 class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
@@ -339,7 +491,7 @@
               </p>
             </li>
             <li
-              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised-secondary p-5 transition duration-300 hover:border-accent"
             >
               <span
                 class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
@@ -362,7 +514,7 @@
               </p>
             </li>
             <li
-              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised-secondary p-5 transition duration-300 hover:border-accent"
             >
               <span
                 class="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
@@ -385,14 +537,19 @@
               </p>
             </li>
             <li
-              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised p-5 transition duration-300 hover:border-accent md:col-span-2 sm:flex sm:items-center sm:gap-5"
+              class="group rounded-[var(--radius-lg)] border border-line bg-surface-raised-secondary p-5 transition duration-300 hover:border-accent md:col-span-2 sm:flex sm:items-center sm:gap-5"
             >
               <span
                 class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line bg-surface text-ink-soft transition duration-300 group-hover:border-accent group-hover:text-accent"
-                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="w-7 h-7">
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="w-7 h-7"
+                >
                   <path
                     d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"
-                  fill="currentColor"/></svg
+                    fill="currentColor"
+                  /></svg
               ></span>
               <div class="mt-4 sm:mt-0">
                 <h3 class="font-display text-lg font-semibold text-ink">
