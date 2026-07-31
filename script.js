@@ -71,3 +71,76 @@ sections.forEach((section) => {
     });
   });
 })();
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("#contact form");
+  const popup = document.getElementById("form-error-popup");
+  const popupMessage = document.getElementById("form-error-message");
+  let hideTimeout;
+
+  form.setAttribute("novalidate", "");
+
+  function showPopup(message) {
+    popupMessage.textContent = message;
+    popup.classList.remove("invisible", "opacity-0");
+
+    clearTimeout(hideTimeout);
+    hideTimeout = setTimeout(function () {
+      popup.classList.add("invisible", "opacity-0");
+    }, 3000);
+  }
+
+  function isValidEmail(value) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(value.trim());
+  }
+
+  const focusableFields = Array.from(
+    form.querySelectorAll("input, textarea, select"),
+  );
+
+  focusableFields.forEach(function (field, index) {
+    field.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && field.tagName !== "TEXTAREA") {
+        e.preventDefault();
+        const next = focusableFields[index + 1];
+        if (next) {
+          next.focus();
+        } else {
+          form.requestSubmit();
+        }
+      }
+    });
+  });
+
+  form.addEventListener("submit", function (e) {
+    const fields = form.querySelectorAll("[required]");
+    let firstEmpty = null;
+
+    fields.forEach(function (field) {
+      if (!field.value.trim() && !firstEmpty) {
+        firstEmpty = field;
+      }
+    });
+
+    if (firstEmpty) {
+      e.preventDefault();
+      showPopup("Please fill in all fields before sending.");
+      firstEmpty.focus();
+      return;
+    }
+
+    const emailField = form.querySelector('input[type="email"]');
+    if (emailField && !isValidEmail(emailField.value)) {
+      e.preventDefault();
+      showPopup("Please enter a valid email address.");
+      emailField.focus();
+      return;
+    }
+  });
+});
