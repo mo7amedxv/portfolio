@@ -115,9 +115,3 @@ Hosted on **GitHub Pages**, deployed straight from this repo. Pushes to the main
 <div align="center">
 Built with HTML, Tailwind CSS & JavaScript.
 </div>
-
----
-
-<div align="center">
-Built with HTML, Tailwind CSS & JavaScript.
-</div>
