@@ -100,7 +100,7 @@ Hosted on **GitHub Pages**, deployed straight from this repo. Pushes to the main
 
 ## 📬 Contact
 
-- **Email:** mohamedsecondacc@gmail.com
+- **Email:** contact.mohamedhatem@gmail.com
 - **Phone:** [+20 122 112 1083](tel:+201221121083)
 - **Location:** Alexandria, Egypt
 - **GitHub:** [@mo7amedxv](https://github.com/mo7amedxv)
