@@ -54,6 +54,22 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.1 },
 );
+const footer = document.querySelector("footer");
+if (footer) {
+  const footerObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navAnchorLinks.forEach((link) =>
+            link.classList.remove("active-link"),
+          );
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
+  footerObserver.observe(footer);
+}
 sections.forEach((section) => {
   observer.observe(section);
 });
