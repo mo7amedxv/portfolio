@@ -39,19 +39,48 @@ This is the personal portfolio website of **Mohamed Hatem**, a freelance front-e
 | Layer | Technology |
 |---|---|
 | Markup | HTML5 (semantic, accessible) |
-| Styling | CSS3, Tailwind CSS |
+| Styling | Tailwind CSS v4 (via `@tailwindcss/cli`) |
 | Behavior | Vanilla JavaScript |
 | Hosting | GitHub Pages |
 | Version Control | Git & GitHub |
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── assets/css/       # Additional stylesheets
+├── dist/              # Compiled, minified CSS output (output.css)
+├── fonts/              # Custom fonts
+├── images/              # Project previews & profile photo
+├── node_modules/         # Installed dependencies
+├── src/                   # Tailwind source (input.css)
+├── index.html              # Main page
+├── script.js                # Interaction & form-handling script
+├── package.json               # Dependencies & build scripts
+└── README.md
+```
 
 ## 🚀 Getting Started
 
 ```bash
 git clone https://github.com/mo7amedxv/portfolio.git
 cd portfolio
+npm install
 ```
 
-It's a static site — either open `index.html` directly in your browser, or serve it locally:
+Build the compiled, minified CSS once:
+
+```bash
+npm run build:css
+```
+
+Or watch for changes while developing:
+
+```bash
+npm run watch:css
+```
+
+Then open `index.html` in your browser, or serve it locally:
 
 ```bash
 npx serve .
@@ -80,6 +109,12 @@ Hosted on **GitHub Pages**, deployed straight from this repo. Pushes to the main
 ## 📄 License
 
 © 2026 Mohamed Hatem. All rights reserved.
+
+---
+
+<div align="center">
+Built with HTML, Tailwind CSS & JavaScript.
+</div>
 
 ---
 
