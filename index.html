@@ -45,7 +45,15 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%230a0a0a%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2268%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2256%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%3C/svg%3E"
     />
-
+    <style>
+      button,
+      .hero-inner a,
+      .logo,
+      .projects a,
+      .about img {
+        user-select: none;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -830,9 +838,153 @@
         </div>
       </section>
     </main>
+    <footer class="footer-dark bg-surface py-16 md:py-24 text-ink">
+      <div class="mx-auto max-w-container px-8">
+        <div
+          class="grid gap-16 grid-cols-1 place-items-center text-center min-[500px]:place-items-stretch min-[500px]:text-left min-[980px]:grid-cols-[2fr_1fr_1fr]"
+        >
+          <div>
+            <h2 class="mb-5 font-display text-3xl font-semibold">
+              Mohamed Hatem
+            </h2>
+
+            <p class="max-w-xs leading-8 text-ink-soft">
+              Front-end developer in Alexandria, Egypt. turning designs into
+              clean, accessible interfaces, one commit at a time.
+            </p>
+
+            <div
+              class="mt-8 flex items-center justify-center min-[500px]:justify-start gap-3"
+            >
+              <a
+                href="https://github.com/mo7amedxv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="w-11 h-11 rounded-full border border-line-strong flex items-center justify-center text-ink-soft hover:bg-accent hover:text-accent-contrast transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.79-.25.79-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.21.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mohamed-hatem-68ba49414/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="w-11 h-11 rounded-full border border-line-strong flex items-center justify-center text-ink-soft hover:bg-accent hover:text-accent-contrast transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <span
+              class="mb-6 block font-mono text-xs uppercase tracking-[0.2em] text-ink-faint"
+            >
+              Navigate
+            </span>
+
+            <ul class="space-y-4">
+              <li>
+                <a href="#home" class="text-ink-soft transition hover:text-ink">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#projects"
+                  class="text-ink-soft transition hover:text-ink"
+                >
+                  Projects
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#about"
+                  class="text-ink-soft transition hover:text-ink"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#skills"
+                  class="text-ink-soft transition hover:text-ink"
+                >
+                  Skills
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  class="text-ink-soft transition hover:text-ink"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span
+              class="mb-6 block font-mono text-xs uppercase tracking-[0.2em] text-ink-faint"
+            >
+              Get In Touch
+            </span>
+
+            <div class="space-y-4 text-ink-soft">
+              <a
+                href="mailto:mohamedsecondacc@gmail.com"
+                class="block center text-ink-soft hover:text-ink transition-colors"
+              >
+                mohamedsecondacc@gmail.com
+              </a>
+
+              <a
+                href="tel:+201221121083"
+                class="block transition hover:text-ink"
+              >
+                +20 122 112 1083
+              </a>
+
+              <p>Alexandria, Egypt</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mt-16 flex flex-col items-center justify-between gap-5 border-t border-line pt-8 text-center font-mono text-xs text-ink-faint md:flex-row"
+        >
+          <p>© 2026 Mohamed Hatem. All rights reserved.</p>
+
+          <p>Built with HTML, Tailwind CSS & JavaScript.</p>
+        </div>
+      </div>
+    </footer>
     <div
       id="form-error-popup"
-      class="fixed top-6 left-1/2 -translate-x-1/2 z-50 invisible opacity-0 transition-[opacity,visibility] duration-200 flex items-center gap-3 rounded-lg bg-red-50 border border-red-200 px-6 py-4 text-red-700 shadow-lg"
+      class="fixed top-6 inset-x-4 mx-auto w-fit max-w-sm z-50 invisible opacity-0 transition-[opacity,visibility] duration-200 flex items-center gap-3 rounded-lg bg-red-50 border border-red-200 px-6 py-4 text-red-700 shadow-lg"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
