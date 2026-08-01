@@ -10,11 +10,31 @@ if (savedItem) {
   root.dataset.theme = savedItem;
 }
 const menuBtn = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
+const navLinksContainer = document.getElementById("navLinks");
 menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+  navLinksContainer.classList.toggle("show");
   menuBtn.classList.toggle("show");
 });
+const navSections = document.querySelectorAll("section[id]");
+const navAnchorLinks = document.querySelectorAll("header a[href^='#']");
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
+
+        navAnchorLinks.forEach((link) => {
+          link.classList.remove("active-link");
+          if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("active-link");
+          }
+        });
+      }
+    });
+  },
+  { rootMargin: "-50% 0px -50% 0px", threshold: 0 },
+);
+navSections.forEach((section) => navObserver.observe(section));
 const sections = document.querySelectorAll(".container");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -76,34 +96,27 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("#contact form");
   const popup = document.getElementById("form-error-popup");
   const popupMessage = document.getElementById("form-error-message");
   let hideTimeout;
-
   form.setAttribute("novalidate", "");
-
   function showPopup(message) {
     popupMessage.textContent = message;
     popup.classList.remove("invisible", "opacity-0");
-
     clearTimeout(hideTimeout);
     hideTimeout = setTimeout(function () {
       popup.classList.add("invisible", "opacity-0");
     }, 3000);
   }
-
   function isValidEmail(value) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(value.trim());
   }
-
   const focusableFields = Array.from(
     form.querySelectorAll("input, textarea, select"),
   );
-
   focusableFields.forEach(function (field, index) {
     field.addEventListener("keydown", function (e) {
       if (e.key === "Enter" && field.tagName !== "TEXTAREA") {
@@ -117,24 +130,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
   form.addEventListener("submit", function (e) {
     const fields = form.querySelectorAll("[required]");
     let firstEmpty = null;
-
     fields.forEach(function (field) {
       if (!field.value.trim() && !firstEmpty) {
         firstEmpty = field;
       }
     });
-
     if (firstEmpty) {
       e.preventDefault();
       showPopup("Please fill in all fields before sending.");
       firstEmpty.focus();
       return;
     }
-
     const emailField = form.querySelector('input[type="email"]');
     if (emailField && !isValidEmail(emailField.value)) {
       e.preventDefault();
