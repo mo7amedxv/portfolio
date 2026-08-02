@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Hatem | Front-End Developer</title>
+
     <meta
       name="description"
       content="Mohamed Hatem — freelance front-end developer based in Alexandria, Egypt. Building clean, responsive interfaces with HTML, CSS, Tailwind"
@@ -22,7 +23,13 @@
     <meta property="og:url" content="https://mo7amedxv.github.io/portfolio/" />
     <meta
       property="og:image"
-      content="https://mo7amedxv.github.io/portfolio/og-image.jpg"
+      content="https://mo7amedxv.github.io/portfolio/images/banner.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Mohamed Hatem Front-End Developer Portfolio"
     />
     <meta property="og:site_name" content="Mohamed Hatem — Portfolio" />
     <meta property="og:locale" content="en_US" />
@@ -35,7 +42,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://mo7amedxv.github.io/portfolio/og-image.jpg"
+      content="https://mo7amedxv.github.io/portfolio/images/banner.png"
     />
 
     <meta name="theme-color" content="#0a0a0a" />
@@ -45,19 +52,23 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2220%22%20fill%3D%22%230a0a0a%22/%3E%3Ctext%20x%3D%2250%22%20y%3D%2268%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2256%22%20font-weight%3D%22700%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EM%3C/text%3E%3C/svg%3E"
     />
+
     <style>
       @media screen and (min-width: 768px) {
         :root {
           --bg-color: #f2f2f0;
           --active-link-color: #121210;
         }
+
         [data-theme="dark"] {
           --bg-color: #121210;
           --active-link-color: #f2f2f0;
         }
+
         header a.active-link {
           color: var(--active-link-color);
         }
+
         a.active-link::after {
           content: "";
           position: absolute;
@@ -70,6 +81,7 @@
           transition: all 0.3s ease;
         }
       }
+
       button,
       .hero-inner a,
       .logo,
@@ -78,6 +90,7 @@
         user-select: none;
       }
     </style>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -96,6 +109,7 @@
         ]
       }
     </script>
+
     <style>
       #project-preview {
         opacity: 0;
@@ -113,6 +127,7 @@
           visibility 0s linear 0s;
       }
     </style>
+
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body class="bg-surface font-body text-ink">
@@ -296,6 +311,7 @@
             <div
               class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/elkaeron.avif"
+              data-preview-alt="Screenshot of the elKaeron website"
             >
               <div class="image-container md:hidden">
                 <img
@@ -349,11 +365,12 @@
             <div
               class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/jadwaly.avif"
+              data-preview-alt="Screenshot of the Jadwaly website"
             >
               <div class="image-container md:hidden">
                 <img
                   src="images/jadwaly.avif"
-                  alt="Preview of the elKaeron website"
+                  alt="Preview of the Jadwaly website"
                   class="block md:hidden w-full rounded-xl border border-line object-cover"
                   loading="lazy"
                 />
@@ -419,6 +436,7 @@
           >
             <span
               class="ghost-num text-[clamp(4.5rem,9vw,7.5rem)] font-bold text-ink-ghost pointer-events-none select-none right-[-0.4rem] top-[-1.6rem] absolute z-[-1] font-display leading-none"
+              aria-hidden="true"
               >02</span
             >
             <h2
@@ -480,6 +498,7 @@
           >
             <span
               class="ghost-num pointer-events-none absolute right-[-0.4rem] top-[-1.6rem] z-[-1] select-none font-display text-[clamp(4.5rem,9vw,7.5rem)] font-bold leading-none text-ink-ghost"
+              aria-hidden="true"
             >
               03
             </span>
@@ -629,6 +648,7 @@
           >
             <span
               class="ghost-num pointer-events-none absolute right-[-0.4rem] top-[-1.6rem] z-[-1] select-none font-display text-[clamp(4.5rem,9vw,7.5rem)] font-bold leading-none text-ink-ghost"
+              aria-hidden="true"
             >
               04
             </span>

@@ -97,11 +97,17 @@ sections.forEach((section) => {
   projects.forEach((project) => {
     project.addEventListener("mouseenter", () => {
       const src = project.dataset.previewImage;
+      const alt = project.dataset.previewAlt;
+
       if (previewImg.getAttribute("src") !== src) {
         previewImg.setAttribute("src", src);
       }
+
+      previewImg.setAttribute("alt", alt);
+
       preview.classList.add("is-visible");
     });
+
     project.addEventListener("mouseleave", () => {
       preview.classList.remove("is-visible");
     });
