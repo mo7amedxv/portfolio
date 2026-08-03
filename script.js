@@ -14,6 +14,8 @@ const navLinksContainer = document.getElementById("navLinks");
 menuBtn.addEventListener("click", () => {
   navLinksContainer.classList.toggle("show");
   menuBtn.classList.toggle("show");
+  const isOpen = navLinksContainer.classList.contains("show");
+  menuBtn.setAttribute("aria-expanded", isOpen);
 });
 const navSections = document.querySelectorAll("section[id]");
 const navAnchorLinks = document.querySelectorAll("header a[href^='#']");
