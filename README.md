@@ -10,7 +10,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](#)
 
-[Live Site](https://mo7amedxv.github.io/portfolio/) · [Contact](mailto:mohamedsecondacc@gmail.com)
+[Live Site](https://mo7amedxv.github.io/portfolio/) · [Contact](mailto:contact.mohamedhatem@gmail.com)
 
 </div>
 
