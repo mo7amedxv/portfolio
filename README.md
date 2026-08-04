@@ -36,13 +36,13 @@ This is the personal portfolio website of **Mohamed Hatem**, a freelance front-e
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Markup | HTML5 (semantic, accessible) |
-| Styling | Tailwind CSS v4 (via `@tailwindcss/cli`) |
-| Behavior | Vanilla JavaScript |
-| Hosting | GitHub Pages |
-| Version Control | Git & GitHub |
+| Layer           | Technology                               |
+| --------------- | ---------------------------------------- |
+| Markup          | HTML5 (semantic, accessible)             |
+| Styling         | Tailwind CSS v4 (via `@tailwindcss/cli`) |
+| Behavior        | Vanilla JavaScript                       |
+| Hosting         | GitHub Pages                             |
+| Version Control | Git & GitHub                             |
 
 ## 📂 Project Structure
 
@@ -93,9 +93,9 @@ Hosted on **GitHub Pages**, deployed straight from this repo. Pushes to the main
 
 ## 🧩 Featured Projects
 
-| Project | Stack | Link |
-|---|---|---|
-| **PcBenchPro — elKaeron** | HTML · CSS · JavaScript | [Live](https://mo7amedxv.github.io/elkaeron/) |
+| Project                          | Stack                   | Link                                                |
+| -------------------------------- | ----------------------- | --------------------------------------------------- |
+| **PcBenchPro — elKaeron**        | HTML · CSS · JavaScript | [Live](https://mo7amedxv.github.io/elkaeron/)       |
 | **Jadwaly — Nursery Management** | HTML · CSS · JavaScript | [Live](https://mo7amedxv.github.io/jadwaly-shaima/) |
 
 ## 📬 Contact
@@ -104,7 +104,7 @@ Hosted on **GitHub Pages**, deployed straight from this repo. Pushes to the main
 - **Phone:** [+20 122 112 1083](tel:+201221121083)
 - **Location:** Alexandria, Egypt
 - **GitHub:** [@mo7amedxv](https://github.com/mo7amedxv)
-- **LinkedIn:** [Mohamed Hatem](https://www.linkedin.com/in/mohamed-hatem-68ba49414/)
+- **LinkedIn:** [Mohamed Hatem](https://www.linkedin.com/in/mohamed-hatem-webdev/)
 
 ## 📄 License
 
