@@ -287,7 +287,7 @@
           class="projects-inner container mx-auto w-full max-w-container px-8"
         >
           <div
-            class="section-head relative isolate mb-10 max-w-[640px] md:mb-16"
+            class="section-head relative isolate mb-14 max-w-[640px] md:mb-20"
           >
             <span
               class="ghost-num pointer-events-none absolute right-[-0.4rem] top-[-1.6rem] z-[-1] select-none font-display text-[clamp(4.5rem,9vw,7.5rem)] font-bold leading-none text-ink-ghost"
@@ -309,21 +309,44 @@
             </p>
           </div>
 
-          <div class="projects-grid grid gap-3 md:gap-0">
+          <div class="projects-grid grid gap-8 md:gap-0">
             <div
-              class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
+              class="project group flex flex-wrap items-center justify-between gap-4 rounded-md border-t-0 transition-colors duration-200 md:relative md:overflow-hidden md:px-4 md:py-9 md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/elkaeron.avif"
               data-preview-alt="Screenshot of the elKaeron website"
             >
-              <div class="image-container md:hidden">
+              <span
+                class="pointer-events-none absolute left-0 top-1/2 hidden h-8 w-[2px] -translate-y-1/2 scale-y-0 bg-ink-soft transition-transform duration-300 ease-out group-hover:scale-y-100 md:block"
+                aria-hidden="true"
+              ></span>
+
+              <div
+                class="image-container w-full overflow-hidden rounded-xl border border-line bg-surface-raised shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)] md:hidden"
+              >
+                <div
+                  class="flex items-center gap-2 border-b border-line px-3 py-2"
+                >
+                  <div class="flex gap-1">
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                  </div>
+                </div>
                 <img
                   src="images/elkaeron.avif"
                   alt="Preview of the elKaeron website"
-                  class="block md:hidden w-full rounded-xl border border-line object-cover"
+                  class="block aspect-[16/10.5] w-full object-cover contrast-[1.02] transition-all duration-500"
                   loading="lazy"
                 />
               </div>
-              <div class="info-container">
+
+              <div class="info-container md:pl-4">
                 <h3
                   class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
                 >
@@ -331,26 +354,41 @@
                 </h3>
 
                 <p
-                  class="font-mono text-[clamp(.9rem,1rem,1.2rem)] leading-relaxed text-ink-soft"
+                  class="mt-2 w-full font-body text-sm leading-relaxed text-ink-soft md:hidden"
                 >
-                  HTML · CSS · JavaScript
+                  PC building and benchmark platform — live compatibility
+                  checks, an AI build assistant, and real-time performance
+                  forecasting.
                 </p>
+
+                <div class="mt-4 flex w-full flex-wrap gap-2">
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >HTML</span
+                  >
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >CSS</span
+                  >
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >JavaScript</span
+                  >
+                </div>
               </div>
 
               <div class="actions flex items-center gap-5">
                 <a
-                  class="group flex rounded-full bg-accent px-4 py-3 text-sm transition-transform duration-150 active:scale-95 text-accent-contrast"
-                  href="https://mo7amedxv.github.io/elkaeron/"
+                  class="group/link flex items-center text-sm transition-transform duration-150 active:scale-95 p-2 -m-2 md:m-0 md:rounded-full md:border md:border-line md:px-4 md:py-3 md:transition-all md:duration-200 md:hover:border-ink md:hover:bg-ink md:hover:text-surface-raised"
                   target="_blank"
                 >
                   <span
-                    class="relative text-accent-contrast after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-[25%] after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover/link:after:w-full md:after:hidden"
                   >
                     View Live Project
                   </span>
-
                   <svg
-                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover/link:translate-x-[1px] group-hover/link:-translate-y-[1px]"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -364,20 +402,44 @@
                 </a>
               </div>
             </div>
+
             <div
-              class="project flex flex-wrap items-center justify-between gap-4 p-4 bg-surface-raised-secondary rounded-md shadow-card border-t-0 transition-colors duration-200 hover:bg-surface-raised md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
+              class="project group flex flex-wrap items-center justify-between gap-4 rounded-md border-t-0 transition-colors duration-200 md:relative md:overflow-hidden md:px-4 md:py-9 md:bg-transparent md:rounded-none md:border-t md:border-line md:shadow-none md:hover:bg-surface-raised-secondary"
               data-preview-image="images/jadwaly.avif"
               data-preview-alt="Screenshot of the Jadwaly website"
             >
-              <div class="image-container md:hidden">
+              <span
+                class="pointer-events-none absolute left-0 top-1/2 hidden h-8 w-[2px] -translate-y-1/2 scale-y-0 bg-ink-soft transition-transform duration-300 ease-out group-hover:scale-y-100 md:block"
+                aria-hidden="true"
+              ></span>
+
+              <div
+                class="image-container w-full overflow-hidden rounded-xl border border-line bg-surface-raised shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)] md:hidden"
+              >
+                <div
+                  class="flex items-center gap-2 border-b border-line px-3 py-2"
+                >
+                  <div class="flex gap-1">
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                    <span
+                      class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+                    ></span>
+                  </div>
+                </div>
                 <img
                   src="images/jadwaly.avif"
                   alt="Preview of the Jadwaly website"
-                  class="block md:hidden w-full rounded-xl border border-line object-cover"
+                  class="block aspect-[16/10.5] w-full object-cover contrast-[1.02] transition-all duration-500"
                   loading="lazy"
                 />
               </div>
-              <div class="info-container">
+
+              <div class="info-container md:pl-4">
                 <h3
                   class="font-display text-[clamp(1.3rem,1.7vw,2.3rem)] font-medium leading-none tracking-[-0.03em]"
                 >
@@ -385,25 +447,41 @@
                 </h3>
 
                 <p
-                  class="font-mono text-[clamp(.9rem,1rem,1.2rem)] leading-relaxed text-ink-soft"
+                  class="mt-2 w-full font-body text-sm leading-relaxed text-ink-soft md:hidden"
                 >
-                  HTML · CSS · JavaScript
+                  Smart scheduling platform for nurseries — enrollment, course
+                  files, and daily activity tracking, built in Arabic.
                 </p>
+
+                <div class="mt-4 flex w-full flex-wrap gap-2">
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >HTML</span
+                  >
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >CSS</span
+                  >
+                  <span
+                    class="rounded-full border border-line px-2.5 py-1 font-mono text-[0.7rem] text-ink-soft"
+                    >JavaScript</span
+                  >
+                </div>
               </div>
 
               <div class="actions flex items-center gap-5">
                 <a
-                  class="group flex rounded-full transition-transform duration-150 active:scale-95 bg-accent px-4 py-3 text-sm text-accent-contrast"
+                  class="group/link flex items-center text-sm transition-transform duration-150 active:scale-95 p-2 -m-2 md:m-0 md:rounded-full md:border md:border-line md:px-4 md:py-3 md:transition-all md:duration-200 md:hover:border-ink md:hover:bg-ink md:hover:text-surface-raised"
                   href="https://mo7amedxv.github.io/jadwaly-shaima/"
                   target="_blank"
                 >
                   <span
-                    class="relative text-accent-contrast after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover:after:w-full"
+                    class="relative after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-[25%] after:bg-current after:content-[''] after:transition-all after:duration-300 group-hover/link:after:w-full md:after:hidden"
                   >
                     View Live Project
                   </span>
                   <svg
-                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover:translate-x-[1px] group-hover:-translate-y-[1px]"
+                    class="ml-1 h-5 w-4 transition-transform duration-300 ease-out group-hover/link:translate-x-[1px] group-hover/link:-translate-y-[1px]"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -419,11 +497,26 @@
             </div>
           </div>
         </div>
+
         <div
           id="project-preview"
-          class="fixed top-0 left-0 z-50 w-[350px] overflow-hidden rounded-2xl border border-line bg-surface-raised shadow-2xl opacity-0 invisible pointer-events-none transition-opacity duration-300"
+          class="pointer-events-none fixed left-0 top-0 z-50 w-[350px] overflow-hidden rounded-2xl border border-line bg-surface-raised opacity-0 shadow-2xl"
         >
+          <div class="flex items-center gap-2 border-b border-line px-3 py-2">
+            <div class="flex gap-1">
+              <span
+                class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+              ></span>
+              <span
+                class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+              ></span>
+              <span
+                class="block h-1.5 w-1.5 rounded-full bg-ink-soft opacity-40"
+              ></span>
+            </div>
+          </div>
           <img
+            id="project-preview-img"
             class="block h-auto max-w-full select-none object-cover"
             src="images/elkaeron.avif"
             alt="Preview of the elKaeron website"
